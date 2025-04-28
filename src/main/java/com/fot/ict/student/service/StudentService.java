@@ -29,8 +29,9 @@ public class StudentService {
         return repo.save(student);
     }
 
-    public void deleteStudentById(int id) {
+    public String deleteStudentById(int id) {
         repo.deleteById(id);
+        return "Student deleted";
     }
 
 }
